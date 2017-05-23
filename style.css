@@ -63,7 +63,7 @@ body .main .central .content .left:hover .name {
 }
 html .main .central .content .left:hover .first,
 body .main .central .content .left:hover .first {
-  width: 210 px;
+  width: 190px;
 }
 html .main .central .content .left .leftHeder,
 body .main .central .content .left .leftHeder {
@@ -107,6 +107,7 @@ html .main .central .content .left .leftMid .spisok div .name,
 body .main .central .content .left .leftMid .spisok div .name {
   margin: -50px 0 0 -200px;
   height: 60px;
+  width: 125px;
 }
 html .main .central .content .left .leftFooter,
 body .main .central .content .left .leftFooter {
