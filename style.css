@@ -1,0 +1,200 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+html .main,
+body .main {
+  display: flex;
+  flex-direction: column;
+  min-width: 1180px;
+  max-width: 1800px;
+}
+html .main .header,
+body .main .header {
+  flex: 0 0 40px;
+  background-color: blue;
+}
+html .main .header #form,
+body .main .header #form {
+  text-align: right;
+  margin: 6px 0 0 0;
+}
+html .main .header #form button,
+body .main .header #form button {
+  width: 15px;
+  height: 15px;
+}
+html .main .central,
+body .main .central {
+  display: flex;
+  flex-grow: 1;
+}
+html .main .central .nav,
+body .main .central .nav {
+  flex: 0 0 80px;
+  background-color: blue;
+}
+html .main .central .content,
+body .main .central .content {
+  display: flex;
+}
+html .main .central .content .left,
+body .main .central .content .left {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 80px;
+}
+html .main .central .content .left:hover,
+body .main .central .content .left:hover {
+  flex: 0 0 240px;
+  margin: 0 -160px 0 0;
+  z-index: 100;
+}
+html .main .central .content .left:hover .name,
+body .main .central .content .left:hover .name {
+  position: relative;
+  left: 280px;
+}
+html .main .central .content .left:hover .first,
+body .main .central .content .left:hover .first {
+  width: 210 px;
+}
+html .main .central .content .left .leftHeder,
+body .main .central .content .left .leftHeder {
+  background-color: green;
+  flex: 0 0 30px;
+}
+html .main .central .content .left .leftMid,
+body .main .central .content .left .leftMid {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(-40%);
+  flex-grow: 1;
+  background-color: white;
+}
+html .main .central .content .left .leftMid .spisok,
+body .main .central .content .left .leftMid .spisok {
+  margin: 0;
+  padding: 70px 0 0 0;
+}
+html .main .central .content .left .leftMid .spisok .first,
+body .main .central .content .left .leftMid .spisok .first {
+  position: fixed;
+  left: 80px;
+  top: 70px;
+  z-index: 100;
+  background-color: white;
+}
+html .main .central .content .left .leftMid .spisok div,
+body .main .central .content .left .leftMid .spisok div {
+  height: 60px;
+}
+html .main .central .content .left .leftMid .spisok div .foto,
+body .main .central .content .left .leftMid .spisok div .foto {
+  flex: 0 0 60px;
+  margin: 13px 0 0 20px;
+  background: url(Picture/circle.png) no-repeat;
+  height: 60px;
+  width: 41px;
+}
+html .main .central .content .left .leftMid .spisok div .name,
+body .main .central .content .left .leftMid .spisok div .name {
+  margin: -50px 0 0 -200px;
+  height: 60px;
+}
+html .main .central .content .left .leftFooter,
+body .main .central .content .left .leftFooter {
+  background-color: red;
+  flex: 0 0 30px;
+}
+html .main .central .content .mid,
+body .main .central .content .mid {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 720px;
+}
+html .main .central .content .mid .midHeder,
+body .main .central .content .mid .midHeder {
+  flex: 0 0 30px;
+  background-color: crimson;
+}
+html .main .central .content .mid .midMid,
+body .main .central .content .mid .midMid {
+  background-color: lawngreen;
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+html .main .central .content .mid .midFooter,
+body .main .central .content .mid .midFooter {
+  background-color: slateblue;
+  flex: 0 0 30px;
+}
+html .main .central .content .right,
+body .main .central .content .right {
+  display: flex;
+  flex-direction: column;
+  flex: 1000 0 300px;
+  max-width: 600px;
+}
+html .main .central .content .right .rightHeder,
+body .main .central .content .right .rightHeder {
+  background-color: green;
+  flex: 0 0 30px;
+}
+html .main .central .content .right .rightMid,
+body .main .central .content .right .rightMid {
+  background-color: yellow;
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+html .main .central .content .right .rightFooter,
+body .main .central .content .right .rightFooter {
+  background-color: red;
+  flex: 0 0 30px;
+}
+html .main .footer,
+body .main .footer {
+  flex: 0 0 40px;
+  background-color: blue;
+}
+html .adv,
+body .adv {
+  flex: 1 0 4px;
+  background-color: blue;
+}
+@media all and (min-width: 1520px) {
+  html .main .central .content .left,
+  body .main .central .content .left {
+    flex: 0 0 240px;
+  }
+  html .main .central .content .left:hover,
+  body .main .central .content .left:hover {
+    margin: 0;
+  }
+  html .main .central .content .left:hover .name,
+  body .main .central .content .left:hover .name {
+    position: relative;
+    left: 0;
+  }
+  html .main .central .content .left .leftMid .spisok .first,
+  body .main .central .content .left .leftMid .spisok .first {
+    position: fixed;
+    left: 80px;
+    top: 70px;
+    z-index: 100;
+    background-color: white;
+  }
+  html .main .central .content .left .leftMid .spisok div .name,
+  body .main .central .content .left .leftMid .spisok div .name {
+    margin: -50px 0 0 70px;
+    height: 60px;
+  }
+}

@@ -1,0 +1,182 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  .main {
+    display: flex;
+    flex-direction: column;
+    min-width: 1180px;
+    max-width: 1800px;
+    .header {
+      flex: 0 0 40px;
+      background-color: blue;
+      #form {
+        text-align: right;
+        margin: 6px 0 0 0;
+        button {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+    .central {
+      display: flex;
+      flex-grow: 1;
+      .nav {
+        flex: 0 0 80px;
+        background-color: blue;
+      }
+      .content {
+        display: flex;
+        .left {
+          display: flex;
+          flex-direction: column;
+          flex: 0 0 80px;
+          &:hover {
+            flex: 0 0 240px;
+            margin: 0 -160px 0 0;
+            z-index: 100;
+          }
+          &:hover .name {
+            position: relative;
+            left: 280px;
+          }
+          &:hover .first {
+            width: 210 px;
+          }
+          .leftHeder {
+            background-color: green;
+            flex: 0 0 30px;
+          }
+          .leftMid {
+            overflow-y: auto;
+            overflow-x: hidden;
+            height: calc(100% - 140px);
+            flex-grow: 1;
+            background-color: white;
+            .spisok {
+              margin: 0;
+              padding: 70px 0 0 0;
+              .first {
+                position: fixed;
+                left: 80px;
+                top: 70px;
+                z-index: 100;
+                background-color: white;
+              }
+              div {
+                height: 60px;
+                .foto {
+                  flex: 0 0 60px;
+                  margin: 13px 0 0 20px;
+                  background: url(Picture/circle.png) no-repeat;
+                  height: 60px;
+                  width: 41px;
+
+                }
+                .name {
+                  margin: -50px 0 0 -200px;
+                  height: 60px;
+
+                }
+              }
+            }
+          }
+          .leftFooter {
+            background-color: red;
+            flex: 0 0 30px;
+          }
+        }
+        .mid {
+          display: flex;
+          flex-direction: column;
+          flex: 1 0 720px;
+
+          .midHeder {
+            flex: 0 0 30px;
+            background-color: crimson;
+          }
+          .midMid {
+            background-color: lawngreen;
+            flex-grow: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+          }
+          .midFooter {
+            background-color: slateblue;
+            flex: 0 0 30px;
+          }
+        }
+        .right {
+          display: flex;
+          flex-direction: column;
+          flex: 1000 0 300px;
+          max-width: 600px;
+          .rightHeder {
+            background-color: green;
+            flex: 0 0 30px;
+          }
+          .rightMid {
+            background-color: yellow;
+            flex-grow: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+          }
+          .rightFooter {
+            background-color: red;
+            flex: 0 0 30px;
+          }
+        }
+      }
+    }
+    .footer {
+      flex: 0 0 40px;
+      background-color: blue;
+    }
+  }
+  .adv {
+    flex: 1 0 4px;
+    background-color: blue;
+  }
+}
+@media all and (min-width: 1520px) {
+  html, body {
+    .main {
+      .central {
+        .content {
+          .left {
+            flex: 0 0 240px;
+            &:hover {
+              margin: 0;
+            }
+            &:hover .name {
+              position: relative;
+              left: 0;
+            }
+            .leftMid {
+              .spisok {
+                .first {
+                  position: fixed;
+                  left: 80px;
+                  top: 70px;
+                  z-index: 100;
+                  background-color: white;
+                }
+                div {
+                  .name {
+                    margin: -50px 0 0 70px;
+                    height: 60px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
